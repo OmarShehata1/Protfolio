@@ -117,7 +117,7 @@ export default function HomePage() {
                 <div className="relative bg-[rgb(var(--background-alt))] rounded-full overflow-hidden w-72 h-72 md:w-96 md:h-96 p-2">
                   {/* Placeholder for profile image */}
                   <div className="w-full h-full rounded-full bg-[rgb(var(--background-alt))] border-2 border-[rgb(var(--background))] flex items-center justify-center text-6xl text-[rgb(var(--text-alt))]">
-                    <img src="./src/images/protfolio.jpeg" alt="Profile" className="w-full h-full object-cover rounded-full" />
+                    <img src="../../public/favicon/protfolio.jpeg" alt="Profile" className="w-full h-full object-cover rounded-full" />
                   </div>
                 </div>
               </div>
