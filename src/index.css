@@ -1,0 +1,172 @@
+/* Import Google Fonts */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Base styles for light theme */
+  :root {
+    --background: 255 255 255; /* #ffffff */
+    --background-alt: 248 249 250; /* #f8f9fa */
+    --text: 33 37 41; /* #212529 */
+    --text-alt: 73 80 87; /* #495057 */
+    --accent: 4 102 200; /* #0466c8 */
+    --accent-alt: 3 83 164; /* #0353a4 */
+    --highlight: 56 178 172; /* #38b2ac */
+    --highlight-alt: 76 81 191; /* #4c51bf */
+  }
+
+  /* Dark theme */
+  .dark {
+    --background: 18 18 18; /* #121212 */
+    --background-alt: 30 30 30; /* #1e1e1e */
+    --text: 248 249 250; /* #f8f9fa */
+    --text-alt: 233 236 239; /* #e9ecef */
+    --accent: 77 171 247; /* #4dabf7 */
+    --accent-alt: 34 139 230; /* #228be6 */
+    --highlight: 157 78 221; /* #9d4edd */
+    --highlight-alt: 114 9 183; /* #7209b7 */
+  }
+
+  /* Colorful theme */
+  .colorful {
+    --background: 98 0 234; /* #6200ea */
+    --background-alt: 124 77 255; /* #7c4dff */
+    --text: 255 255 255; /* #ffffff */
+    --text-alt: 248 249 250; /* #f8f9fa */
+    --accent: 105 240 174; /* #69f0ae */
+    --accent-alt: 0 230 118; /* #00e676 */
+    --highlight: 255 171 64; /* #ffab40 */
+    --highlight-alt: 255 110 64; /* #ff6e40 */
+  }
+
+  /* Cyberpunk theme */
+  .cyberpunk {
+    --background: 12 12 20; /* #0c0c14 */
+    --background-alt: 21 21 46; /* #15152e */
+    --text: 238 243 255; /* #eef3ff */
+    --text-alt: 202 210 255; /* #cad2ff */
+    --accent: 254 0 254; /* #fe00fe */
+    --accent-alt: 204 0 204; /* #cc00cc */
+    --highlight: 0 254 254; /* #00fefe */
+    --highlight-alt: 102 252 241; /* #66fcf1 */
+  }
+
+  /* Nature theme */
+  .nature {
+    --background: 240 247 238; /* #f0f7ee */
+    --background-alt: 225 237 222; /* #e1edde */
+    --text: 44 65 41; /* #2c4129 */
+    --text-alt: 75 96 67; /* #4b6043 */
+    --accent: 118 167 94; /* #76a75e */
+    --accent-alt: 95 141 78; /* #5f8d4e */
+    --highlight: 209 165 104; /* #d1a568 */
+    --highlight-alt: 194 149 74; /* #c2954a */
+  }
+
+  /* Minimalist theme */
+  .minimalist {
+    --background: 255 255 255; /* #ffffff */
+    --background-alt: 245 245 245; /* #f5f5f5 */
+    --text: 17 17 17; /* #111111 */
+    --text-alt: 51 51 51; /* #333333 */
+    --accent: 85 85 85; /* #555555 */
+    --accent-alt: 119 119 119; /* #777777 */
+    --highlight: 153 153 153; /* #999999 */
+    --highlight-alt: 187 187 187; /* #bbbbbb */
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-[rgb(var(--background))] text-[rgb(var(--text))];
+    @apply min-h-screen transition-colors duration-300;
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 md:px-8 max-w-7xl;
+  }
+
+  .page-section {
+    @apply py-12 md:py-24;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-5 py-3 rounded-lg font-medium transition-colors duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-[rgb(var(--accent))] text-white hover:bg-[rgb(var(--accent-alt))];
+  }
+
+  .btn-secondary {
+    @apply bg-[rgb(var(--background-alt))] text-[rgb(var(--text))] hover:bg-[rgb(var(--text-alt))] hover:text-[rgb(var(--background-alt))];
+  }
+
+  /* Card styling */
+  .card {
+    @apply bg-[rgb(var(--background-alt))] rounded-xl shadow-md transition-all;
+  }
+
+  /* Section styling */
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-6;
+  }
+
+  .section-subtitle {
+    @apply text-[rgb(var(--accent))] font-medium mb-2;
+  }
+}
+
+/* Special styles for colorful theme */
+.colorful body {
+  @apply bg-gradient-to-br from-[rgb(var(--background))] to-[rgb(var(--background-alt))];
+}
+
+/* Custom cursor effects */
+.custom-cursor {
+  @apply relative;
+}
+
+.custom-cursor::after {
+  content: "";
+  @apply absolute -inset-2 rounded-lg scale-50 bg-[rgb(var(--accent))] opacity-0 transition-all duration-300;
+}
+
+.custom-cursor:hover::after {
+  @apply scale-100 opacity-10;
+}
+
+/* Scroll enhancements */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[rgb(var(--background-alt))];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[rgb(var(--text-alt))] rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-[rgb(var(--accent))];
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-[rgb(var(--accent))];
+}
