@@ -17,7 +17,7 @@ export default function ProjectsPage() {
       category: 'Fullstack',
       technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
       imageUrl: '/projects/storify.jpg',
-      githubUrl: 'https://github.com/OmarShehata1/storify',
+      githubUrl: 'https://github.com/OmarShehata1/E-Commerce',
       // liveUrl: 'https://storify-demo.vercel.app',
       features: [
         'User authentication',
@@ -66,7 +66,7 @@ export default function ProjectsPage() {
       technologies: ['React', 'CSS', 'Local Storage'],
       imageUrl: '/projects/travel-list.jpg',
       githubUrl: 'https://github.com/OmarShehata1/travel-list',
-      liveUrl: 'https://travel-list-demo.vercel.app',
+      liveUrl: 'https://travel-list6.netlify.app/',
       features: [
         'Add/remove items',
         'Mark items as packed',
@@ -200,7 +200,7 @@ export default function ProjectsPage() {
       technologies: ['HTML', 'CSS', 'JavaScript'],
       imageUrl: '/projects/pig-game.jpg', // Replace with actual image path
       githubUrl: 'https://github.com/OmarShehata1/Pig-Game', 
-      liveUrl: '', // Add live demo URL if available
+      liveUrl: 'https://pig-game5.netlify.app/',
       features: [
         'Two-player turn-based gameplay',
         'Random dice roll simulation',
