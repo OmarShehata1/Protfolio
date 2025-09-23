@@ -13,10 +13,10 @@ export default function ProjectsPage() {
     {
       id: 1,
       title: 'Storify',
-      description: 'A story sharing platform where users can publish and read stories.',
+      description: 'An eCommerce platform where users can browse, purchase, and manage products seamlessly.',
       category: 'Fullstack',
       technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
-      imageUrl: '/projects/storify.jpg',
+      imageUrl: '/public/images/Storify.jpg',
       githubUrl: 'https://github.com/OmarShehata1/E-Commerce',
       // liveUrl: 'https://storify-demo.vercel.app',
       features: [
@@ -32,7 +32,7 @@ export default function ProjectsPage() {
       description: 'Fullstack chat and video calling application with real-time communication.',
       category: 'Fullstack',
       technologies: ['React', 'Tailwind', 'NodeJS', 'Express', 'MongoDB', "Stream"],
-      imageUrl: '/projects/strimo.jpg',
+      imageUrl: '/public/images/Strimo.webpstrimo.jpg',
       githubUrl: 'https://github.com/OmarShehata1/strimo',
       liveUrl: 'https://strimo-demo.vercel.app',
       features: [
@@ -48,7 +48,7 @@ export default function ProjectsPage() {
       description: 'RESTful API for managing educational courses and student enrollments.',
       category: 'Backend',
       technologies: ['NodeJS', 'Express', 'MongoDB', 'JWT'],
-      imageUrl: '/projects/course-api.jpg',
+      imageUrl: '/public/images/Api.webp',
       githubUrl: 'https://github.com/OmarShehata1/API_Courses',
       liveUrl: null,
       features: [
